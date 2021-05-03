@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<link rel="stylesheet" href="css/custom.css">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Alegreya%20SC" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Allura" rel="stylesheet">
+	  
+	  <!--Favicon-->
+	  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+	
+	
+<title>Log In</title>
+</head>
+
+<body>
+	<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light sticky">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+          <p class="title"> My<span class="sports">Sports</span>Folio&reg;</p>
+        </a>
+	   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    <div class="collapse navbar-collapse ml-auto" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="joinMSF.html">Join My<span class="sports">Sports</span>Folio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://meetings.hubspot.com/info11395?embed=true" target="_blank">Schedule Demo</a>
+        </li>
+		 <li class="nav-item">
+		  <a class="nav-link" href="about.html">About</a>
+		</li>
+		<li class="nav-item">
+          <a class="nav-link" href="resources.html">Resources</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="logIn.html">Log In</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+	<!-- About -->
+	<div class="about d-flex flex-column"> 
+		<br><br><br><br><h1 class="login">Log In</h1>
+		<hr class="paragraphLine">
+		<p>Please enter your Registered Cell Phone #. You'll receive a code via text to validate your account. On the next page, you'll enter that code to proceed.</p>
+	
+	<!--Start Jot form-->
+	<form action="includes/send_verification.php" method="post" name="verification_form">                                     
+          <div class="col-md-12 control-group" style="text-align: center; width:100%; display:block">
+          	<b>Registered Cell Phone #:</b> <font size="2" color="red">*</font>
+			  <p  style="text-align: center; margin-bottom: 0px;" >
+				  <input type="text" size="35" id="email" name="email" style="width:100%;  max-width:500px; font-size: x-large; text-align:center" /><br>
+				  <input class="button" type="submit" value="Send Code" title="Send Verification Code" style="display: inline-block; margin-top: 10px" />  
+               </p>
+			  <p style="text-align: center;">It may take up to a minute to receive your code. Please be patient. Message and data rates may apply.<br>If there are issues please contact an admin at 864-434-1186.</p>
+            </div>
+   </form>
+   </div>
+<!-- Footer -->
+	<footer>
+		<div class="footer">
+			<hr class="footBar">
+			<p> Powered by My<span class="sports">Sports</span>Folio&reg;</p>
+			<div class="socialMedia">
+				<a href="https://www.instagram.com/mysportsfolio/" target="_blank">
+					<img src="images/Instagram.svg" alt="instagram">
+				</a>
+				<a href="https://twitter.com/mysportsfolio?lang=en" target="_blank">
+					<img src="images/Twitter.svg" alt="instagram">
+				</a>
+				<a href="https://www.facebook.com/mysportsfolio.net" target="_blank">
+					<img src="images/Facebook.svg" alt="instagram">
+				</a>
+			</div>
+			<hr class="footBar">
+			<address> 
+				<a href="tel:864-434-1186">Tel: (864) 434-1186</a>
+				<a class="pageBreak2">•</a><br class="pageBreak">
+		    PO BOX 413 Simpsonville, SC 29681
+          </address>
+		<ul class="links"> 
+			<li id="copyright">&copy;2021 My<span class="sports">Sports</span>Folio&reg; All rights reserved.</li>
+			<li>
+				<a class="footerPage" href="privacy.html" target="_blank">Privacy Policy</a>
+			</li>
+		</ul>
+		</div>
+	</footer>
+		  <!-- Javascript -->
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/jquery-migrate-3.0.0.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+        <script src="js/jquery.backstretch.min.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script src="js/scripts.js"></script>
+	    <script src="js/scroll.js"></script>
+	  <!-- Start of HubSpot Embed Code -->
+  		<script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/19648684.js"></script>
+  	  <!-- End of HubSpot Embed Code -->
+  </body>
+</html>

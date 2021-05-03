@@ -1,0 +1,665 @@
+@charset "UTF-8";
+/* Website Designed and Created by Michelle Gee. michelleharuka3@gmail.com or michelleharuka.com*/
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,700;1,700&display=swap');
+
+/* --------------------------------Nav Bar------------------------------ */
+.navbar {
+  overflow: hidden;
+	position: fixed!important; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+	z-index: 999;
+	background-color: white;
+}
+
+h1 {
+	font-family: 'PT Sans', sans-serif;
+	font-size: 40px;
+	color: #D63133;
+	text-align: center;
+}
+p {
+	font-size: 22px;
+	font-family: 'PT Sans', sans-serif;
+	text-align: center;
+	color: #46454A;
+}
+h2 {
+	color: #46454A;
+}
+nav ul li a {
+	font-family: 'PT Sans', sans-serif;
+	font-size: 20px;
+	text-align: center;
+}
+ul.navbar-nav > li > a:hover {
+    text-decoration: underline;
+    color:red;
+}
+.chat {
+	color: #D63133 !important;
+}
+/* --------------------------------Logo Font------------------------------ */
+.sports {
+	color: #D63133;
+	font-style: italic;
+}
+.sports2 {
+	color: black!important;
+}
+.title {
+	color: black;
+	font-size: 25px;
+}
+/* --------------------------------Home------------------------------ */
+.videoBox {
+	margin-top: 100px;
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	height: auto;
+	padding-top: 56.25%;
+	margin-bottom: -190px;
+}
+@media (max-width: 991px) and (min-width: 450px) {
+	.videoBox {
+		margin-bottom: -120px!important;
+	}
+	.scrollText {
+    font-size: 16px!important;
+	}
+	.openStatement  {
+		padding-top: 20px!important;
+	}
+
+}
+@media (max-width: 991px) and (min-width: 768px) {
+	.openStatement  {
+		padding-top: 0px!important;
+	}
+}
+@media (max-width: 450px) and (min-width: 320px){
+	.videoBox {
+		margin-bottom: -100px!important;
+	}
+	.scrollText {
+    font-size: 12px!important;
+	}
+	.homeBar {
+		width: 80%;
+	}
+	.openStatement  {
+		padding-top: 20px!important;
+	}
+}
+@media (max-width: 320px) {
+	.openStatement  {
+		padding-top: 30px!important;
+	}
+}
+.video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 70%;
+	height: 70%;
+	margin: 0 auto;
+	display: block;
+	vertical-align: middle;
+}
+.scrollBefore:before {
+	display: block; 
+  content: " "; 
+  margin-top: -100px; 
+  height: 100px; 
+  visibility: hidden; 
+  pointer-events: none;
+}
+.scrollBefore2:before {
+	display: block; 
+  content: " "; 
+  margin-top: -80px; 
+  height: 80px; 
+  visibility: hidden; 
+  pointer-events: none;
+}
+.scrollBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+	align-content: center;
+	text-align: center;
+}
+
+.scrollImg {
+	width: 60px;
+	height: auto;
+}
+.scrollText {
+	color: #484648;
+    font-size: 20px;
+	text-align: center;
+}
+.openStatement {
+	padding-top: 10px;
+	padding-bottom: 10px; 
+	width: 80%; 
+	margin: 0 auto;
+}
+.homeBar {
+	border-top: 2px solid #818088;
+	text-align:center; 
+	margin: 0 auto;
+}
+
+/*---Carousel---*/
+
+.carousel-control-prev-icon {
+	margin-right: 90%; 
+}
+.carousel-control-next-icon {
+	margin-left: 90%; 
+}
+.testimonial {
+	margin-bottom: 10px;
+}
+
+/*-------Icons Text--------*/
+
+.services {
+	-webkit-box-flex: 1;
+    -ms-flex: 1 1 50%;
+    flex: 1 1 50%;
+}
+.feature {
+	width: 80%;
+	margin: 0 auto;
+}
+.grey {
+	background-color: #f0f0f0;
+	height: auto;
+	width: 100%;
+}
+.white {
+	background-color: #ffffff;
+	height: auto;	
+}
+.flip {
+	flex-direction: row-reverse;
+	}
+.bigIcon, .bigIconR {
+	padding: 0!important;
+}
+
+/*Screens 575 or less makes width thicker, easier to read; Make text smaller and centered*/
+@media screen and (max-width: 575px) {
+	.openStatement{
+		font-size: 14px;
+	}
+	.grey, .white {
+		display: block;
+		margin: 0 auto !important;
+	}
+
+	.homeHead, .homeHeadR {
+		font-size: 25px!important;
+		width: 100%;
+		margin: 0 auto;
+		text-align: center;
+		flex-basis: auto!important;
+	}
+	.bigIcon, .bigIconR {
+		height: auto;
+		width: 100%!important;
+		margin: 0 auto;
+	}
+	.pLeft, .pRight {
+		font-size: 14px;
+		margin-bottom: 30px;
+		margin-top: 10px;
+		text-align: justify;
+		padding: 0!important;
+	} 
+}
+
+/*Screens between 575 & 850, makes width thicker, easier to read*/
+@media screen and (max-width: 768px) and (min-width: 575px) {
+	.grey, .white {
+		display: block;
+		margin: 0 auto !important;
+	}
+	.lastBox {
+		margin-bottom: 0px!important;
+	}
+	.bigIcon, .bigIconR {
+		font-size: 25px;
+		display: inline-block;
+		padding: 0!important;
+	}
+	.pLeft, .pRight {
+		font-size: 16px;
+		margin-top: 10px;
+		display: inline-block;
+		text-align: left;
+	} 
+	.pRight {
+		padding-left: 15px!important;
+		padding-right: 4px!important;
+	
+	} 
+	.pLeft {
+		padding-right: 15px;
+	} 
+
+}
+
+/*Screens 992-768 or more makes width thinner*/
+@media screen and (max-width: 992px) and (min-width: 768px){
+	.services {
+		overflow: hidden;
+		width: 100%
+	}
+	.bigIcon {
+		width: 150px;
+		display: inline-block;
+		padding: 0!important;
+	}
+	.bigIconR {
+		width: 150px;
+		display: inline-block;
+		padding: 0!important;
+	}
+	.pLeft {
+		text-align: left!important;
+		width: 50%;
+		font-size: 18px;		
+	}
+	.pRight {
+		text-align: left;
+		width: 50%;
+		font-size: 18px;
+	}
+}
+/*Screens 992 or more makes width thinner*/
+@media screen and (min-width: 992px) {
+	.pLeft {
+		text-align: left;
+		
+	}
+	.pRight {
+		text-align: left;
+	}
+}
+
+
+/* --------------------------------JoinMySportsFolio------------------------------ */
+/*Screens 450 or less makes width thicker, easier to read*/
+@media screen and (max-width: 450px) {
+
+	.about li {
+		text-align: left!important;
+		font-size: 12px!important;
+	}
+	#join {
+		margin-bottom: 0px!important;
+		margin-top: 30px;
+	}
+}
+
+.button {
+	display: flex;
+	justify-content: center;
+}
+/* --------------------------------About------------------------------ */
+
+/*Screens 450 or less makes width thicker, easier to read*/
+@media screen and (max-width: 450px) {
+	.about {
+		height: auto;
+		display: block;
+		margin: 0 5%;
+	}
+	.about p, h2 {
+		text-align: justify;
+		font-size: 12px!important;
+	}
+	.about h1, .paragraphLine {
+		font-size: 14px!important;
+	}
+	.priv {
+	margin-bottom: 5px!important;
+	}
+}
+/*Screens 650 or more. Make Footer Pages and Address go on one line. Hides page break*/
+@media screen and (min-width: 650px) {
+	.pageBreak {
+		display: none;
+	}
+}
+/*Screens 650 or less. Make dot disappear*/
+@media screen and (max-width: 650px) {
+	.pageBreak2 {
+		display: none;
+	}
+
+}
+/*Screens 800 or less makes width thicker, easier to read*/
+@media screen and (max-width: 800px) {
+	.about {
+		height: auto;
+		display: block;	
+	}
+	.bannerImg {
+		width: 80%!important;
+	}
+
+}
+/*Screens 801 or less */
+@media screen and (min-width: 801px) {
+	.about {
+		max-width: 70%;
+		height: auto;
+		display: block;
+		margin: 0 15%;
+	}
+}
+/* --------------About/LogIn/Privacy/Home------------ */
+.bannerImg {
+	width: 60%;
+	height: auto;
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+	margin-bottom: 10px;
+	margin-top: 75px;
+}
+
+.paragraphLine {
+	border-top: 2px solid #818088;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+.about h1, h2 {
+	margin-left: 10%;
+	margin-right: 10%;
+	text-align: left;
+	font-family: 'PT Sans', sans-serif;
+	margin-bottom: 0!important;
+}
+.about h1 {
+	font-size: 30px;
+}
+.about h2 {
+	font-size: 20px;
+}
+.about p {
+	margin-bottom: 50px;
+	text-align: justify;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+.login h1{
+	margin-top: 500px;
+	position: absolute;
+}
+
+/* --------------------------------Privacy------------------------------ */
+.privacy {
+	font-size: 16px;
+	margin-bottom: 20px!important;
+}
+.privacy_list {
+	margin-top: -10px;
+	margin-left: 15%;
+	margin-right: 15%;
+	color: #46454A;
+}
+
+
+/* --------------------------------To Top Button------------------------------ */
+.scroll {
+    color: #fff;
+    margin-top: 100px
+}
+
+#toTopBtn {
+    position: fixed;
+    bottom: 26px;
+    right: 89px;
+    z-index: 98;
+    padding: 21px;
+    background-color: #D63133;
+}
+
+.js .cd-top--fade-out {
+    opacity: .5
+}
+
+.js .cd-top--is-visible {
+    visibility: visible;
+    opacity: 1
+}
+
+.js .cd-top {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .3s, visibility .3s, background-color .3s
+}
+
+.cd-top {
+    position: fixed;
+    bottom: 20px;
+    bottom: var(--cd-back-to-top-margin);
+    right: 20px;
+    right: var(--cd-back-to-top-margin);
+    display: inline-block;
+    height: 40px;
+    height: var(--cd-back-to-top-size);
+    width: 40px;
+    width: var(--cd-back-to-top-size);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .05) !important;
+    background: url(https://res.cloudinary.com/dxfq3iotg/image/upload/v1571057658/cd-top-arrow.svg) no-repeat center 50%;
+    background-color: hsla(5, 76%, 62%, .8);
+    background-color: hsla(var(--cd-color-3-h), var(--cd-color-3-s), var(--cd-color-3-l), 0.8)
+}
+/* ----------------------------Resources-------------------------- */
+
+/*Screens less than 535*/
+@media screen and (max-width:535px) {
+	.smRes {
+		font-size: 6px!important;
+	}
+	.mdRes {
+		font-size: 8px!important;
+	}
+}
+@media screen and (max-width: 768px) and (min-width: 535px) {
+	.square-container p {
+		font-size: 14px;
+	}
+	.smRes {
+		font-size: 12px!important;
+	}
+	.mdRes {
+		font-size: 14px!important;
+	}
+}
+
+/*Screens 850 to 768*/
+@media screen and (max-width: 850px) and (min-width: 768px) {
+	.square-container p {
+		font-size: 16px!important;
+	}
+}
+/*Screens 850 or less*/
+@media screen and (max-width: 800px) {
+	.square-container {
+		width: 80%!important;
+	}
+}
+
+.square-container {
+  display: flex;
+  flex-wrap: wrap;
+	margin: 0 auto;
+  /*margin-bottom: 50px;
+  margin-left: 5%;
+  margin-right: 5%;*/
+  width: 61%;
+	margin-bottom: 20px;
+}
+
+.square {
+  position: relative;
+  flex-basis: calc(33.333% - 10px);
+  margin: 5px;
+  box-sizing: border-box;
+}
+
+.square::before {
+  content: '';
+  display: block;
+  padding-top: 100%;
+}
+
+.square .content {
+  position: absolute;
+  top: 0; left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+
+.resources {
+  display: inline-block;
+  background-size: contain;
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+
+.NCAA {
+	background-color: #005EB8;
+	background-image: url("../images/resourceOrgs/ncaa2.png");
+}
+
+.NLI {
+	background-color: #004990;
+	background-image: url("../images/resourceOrgs/nli.png");
+}
+
+.NJCAA {
+	background-color: #005498;
+	background-image: url("../images/resourceOrgs/njcaa.png");
+}
+
+.NAIA {
+	background-color: #004990;
+	background-image: url("../images/resourceOrgs/naia.png");
+}
+
+.FAFSA {
+	background-color: #ACD08C;
+	background-image: url("../images/resourceOrgs/fafsa.png");
+}
+
+.SAT {
+	background-color: #00ADEF;
+	background-image: url("../images/resourceOrgs/SAT.png");
+}
+
+.ACT {
+	background-color: #002D62;
+	background-image: url("../images/resourceOrgs/actWhite.png");
+}
+
+.square-container p {
+	color: white;
+	font-size: 20px;
+	text-align: center!important;
+	align-content: center;
+	margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+	width: 95%;
+}
+
+
+
+/* --------------------------------Footer------------------------------ */
+footer {
+	width: 100%;
+	clear: both;
+	text-align: center;
+	background-color: #46454A;
+	font-size: 16px;
+	color: white;
+	font-family: 'PT Sans', sans-serif;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.socialMedia a {
+	display: inline-block;
+	margin: 0 10px;
+	height: 50px!important;
+	width: 50px!important;
+}
+hr.footBar {
+	width: 75%;
+	border-top: 2px solid #B6B8B9;
+}
+#copyright {
+	font-size: 16px;
+	display: inline;
+	color: #989799;
+}
+address {
+	margin: 0 auto;
+}
+.links {
+	list-style-type: none;
+}
+.links li {
+	display: inline;
+}
+ul.links {
+	padding: 0!important;
+}
+.footerPage {
+	text-decoration: underline;
+}
+
+.active2 {
+	color: #D63133;
+}
+
+#footerPage {
+		display: inline;
+	}
+
+footer p {
+	font-size: 16px;
+	color: white;
+}
+/*Screens less than 535*/
+@media screen and (max-width:535px) {
+	footer p, address, .footerPage{
+		font-size: 14px!important;
+	}
+
+}
+/*Screens more than 435*/
+@media screen and (min-width:435px) {
+	#chatBreak{
+		display: none;
+	}
+
+}
